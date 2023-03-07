@@ -41,6 +41,7 @@ def fetch_sat_and_rarity(url):
 
 # define a function to process a list of URLs and display the results in the output_text box
 def process_urls():
+    output_text.delete(1.0, tk.END)
     urls = url_entry.get("1.0", tk.END).split('\n')
     urls = [url.strip() for url in urls if url.strip()]  # remove empty strings and leading/trailing whitespace
 
